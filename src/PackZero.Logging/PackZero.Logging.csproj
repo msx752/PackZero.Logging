@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>10.0</LangVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<id>PackZero.Logging</id>
+		<Title>PackZero.Logging</Title>
+		<Description>serilog extension for the exception handling</Description>
+		<Summary></Summary>
+		<Authors>Mustafa Salih ASLIM;</Authors>
+		<PackageProjectUrl>https://github.com/msx752/PackZero.Logging</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/msx752/PackZero.Logging</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<SignAssembly>False</SignAssembly>
+		<PackageIcon>wfc2.png</PackageIcon>
+		<PackageTags>dotnet core net6 net7 serilog extension for the exception handling</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<DebugType>embedded</DebugType>
+		<PublishRepositoryUrl>True</PublishRepositoryUrl>
+		<ContinuousIntegrationBuild>True</ContinuousIntegrationBuild>
+		<EmbedUntrackedSources>True</EmbedUntrackedSources>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\wfc2.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+	</ItemGroup>
+</Project>
